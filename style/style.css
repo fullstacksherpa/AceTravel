@@ -1,0 +1,470 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+::-webkit-input-placeholder {
+  color: #D1D1D1;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  color: #D1D1D1;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+::-ms-input-placeholder {
+  color: #D1D1D1;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: #D1D1D1;
+  opacity: 0.9;
+  font-size: 16px;
+}
+
+::focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.grey {
+  background: #f1f1f1;
+  padding: 50px 0;
+}
+
+.grey .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.white {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+.white .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+header {
+  background: #087d36;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.logo img {
+  height: 65px;
+}
+
+nav {
+  background: #006d26;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 230px;
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.banner {
+  background: url(https://www.acetravels.com/public/images/search-cover.jpg);
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner h1 {
+  padding: 25px 0;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+.banner input {
+  width: 60%;
+  height: 45px;
+  border: 0;
+  color: #000000;
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.banner button {
+  background-color: orange;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  margin-left: 2px;
+}
+
+.page-title {
+  position: relative;
+}
+
+.page-title h1 {
+  color: #006d26;
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: normal;
+  padding-left: 7px;
+  padding-top: -5px;
+}
+
+.page-title::before {
+  content: '';
+  background-color: transparent;
+  border-left: 2px solid #ff5706;
+  border-top: 2px solid #ff5706;
+  display: inline-block;
+  height: 23px;
+  width: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.page-title p {
+  color: #616161;
+  padding-top: 12px;
+  padding-left: 6px;
+}
+
+.offer {
+  padding: 50px 0;
+}
+
+.offer .special {
+  padding: 25px 0;
+}
+
+.offer .special .special-box {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  position: relative;
+}
+
+.offer .special .special-box img {
+  width: 100%;
+}
+
+.offer .special .special-box .special-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  color: #ffffff;
+  padding: 30px;
+  text-align: center;
+}
+
+.offer .special .special-box .special-content h2 {
+  font-size: 30px;
+}
+
+.offer .special .special-box .special-content .star {
+  color: #FBBD06;
+  padding: 5px 0;
+}
+
+.offer .special .special-box .special-content .btn {
+  background-color: #FB8C00;
+  padding: 5px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.trips .trip-card {
+  margin: 25px 0;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.trips .trip-card img {
+  width: 100%;
+}
+
+.trips .trip-card .card-head {
+  position: relative;
+}
+
+.trips .trip-card .card-head .trips-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.trips .trip-card .card-head .trips-title h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.trips .trip-card .card-head .trip-day {
+  background: #FB8C00;
+  padding: 10px 5px;
+  color: #FDFDFD;
+  position: absolute;
+  width: 80px;
+  height: 70px;
+  text-align: center;
+  z-index: 123;
+  top: 25px;
+  left: 0;
+}
+
+.trips .trip-card .card-body {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.trips .trip-card .card-body .price {
+  color: #FB8C00;
+  font-size: 22px;
+}
+
+.trips .trip-card .card-body .price span {
+  color: #006d26;
+  display: block;
+  font-size: 18px;
+}
+
+.trips .trip-card .card-body .vd {
+  border: 1px solid #006d26;
+  padding: 10px;
+  color: #006d26;
+}
+
+.trips .trip-card .card-body .vd:hover {
+  background-color: #006d26;
+  color: #ffffff;
+}
+
+.asia .flex {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.asia .asia-card {
+  background: #ffffff;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.asia .asia-card .asia-left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.asia .asia-card .asia-left img {
+  width: 100%;
+}
+
+.asia .asia-card .asia-right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+.asia .asia-card .asia-right .green {
+  color: #006d26;
+}
+
+.asia .asia-card .asia-right .brown {
+  color: #616161;
+}
+
+.asia .asia-card .asia-right .price {
+  color: #FB8C00;
+  font-size: 24px;
+}
+
+.asia .asia-card .asia-right .price span {
+  color: #006d26;
+  display: block;
+  font-size: 15px;
+}
+
+.asia .asia-card .asia-right .vd {
+  display: inline-block;
+  border: 1px solid #006d26;
+  padding: 10px;
+  color: #006d26;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.asia .asia-card .asia-right .vd:hover {
+  background-color: #006d26;
+  color: #ffffff;
+}
+
+footer .flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .top {
+  background: #087d36;
+  color: #C9C9C9;
+  padding: 25px 0;
+}
+
+footer .top .footer-box {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+footer .top .footer-box img {
+  width: 100%;
+  padding: 15px;
+}
+
+footer .top .footer-box ul {
+  list-style: none;
+}
+
+footer .top .footer-box ul li {
+  line-height: 1.9;
+  border-bottom: 1px solid #006d26;
+}
+
+footer .top .footer-box ul li span {
+  font-weight: bold;
+  color: #F3F3F3;
+}
+
+footer .top .footer-box p {
+  color: yellow;
+}
+
+footer .top .footer-box .icon {
+  margin-top: 5px;
+}
+
+footer .top .footer-box .icon ul {
+  list-style: none;
+}
+
+footer .top .footer-box .icon ul li {
+  display: inline-block;
+}
+
+footer .top .footer-box .icon ul li a {
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  line-height: 17px;
+  border: 2px solid #1c8b3c;
+  text-align: center;
+  display: block;
+  padding: 6px;
+  border-radius: 50%;
+  text-decoration: none !important;
+}
+
+footer .top .footer-box .icon ul li a:hover:first-child {
+  background: blue;
+}
+
+footer .top .footer-box .icon ul li a:hover:nth-child(2) {
+  background: skyblue;
+}
+
+footer .top .footer-box .icon ul li a:hover:nth-child(1) {
+  background: red;
+}
+
+footer .bottom {
+  background: #006d26;
+  color: #C9C9C9;
+  padding: 15px 0;
+}
+
+footer .bottom a {
+  color: #F4F4F4;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.caro {
+  padding: 50px;
+  background: #006d26;
+  color: #ffffff;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

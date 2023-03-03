@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+::placeholder{
+    color:#D1D1D1;
+    opacity: 0.9;
+    font-size: 16px;
+}
+::focus{
+    border:none !important;
+    outline:none !important;
+}
+.grey{
+    background: #f1f1f1;
+    padding:50px 0;
+    .flex{
+        flex-wrap: wrap;
+    }
+}
+.white{
+    background:#ffffff;
+    padding:50px 0;
+    .flex{
+        flex-wrap: wrap;
+    }
+}
